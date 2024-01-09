@@ -3,6 +3,6 @@ RUN mkdir -p /opt/app
 WORKDIR /opt/app
 COPY package*.json .
 RUN npm install
-EXPOSE 3002
+EXPOSE 3000
 COPY . .
 CMD ["npm", "start"]
